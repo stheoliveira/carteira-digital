@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Carteira</title>
+
+    <!-- Custom fonts for this template-->
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom styles for this template-->
+    <link href="base.css" rel="stylesheet">
+
+</head>  
+
+
+
+<body>
+<header>
+    <nav class="navbar navbar-expand navbar-light bg-nav topbar mb-4 static-top shadow">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- logo MerCO2-->
+            <img id="navlogo" src="./img/logo.svg">
+
+            <!-- Topbar Search -->
+            <form class="d-none d-sm-inline-block form-inline my-2 ml-auto">
+                <div id="pesquisa" class="input-group">
+                    <input id="barra-pesquisa"  class="bg-light border-0" placeholder="Pesquisar...">
+                    <button id="botao-pesquisa" class="btn" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                    </button>
+                </div>
+            </form>
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav">
+                
+
+                <!-- Nav Item - Alerts -->
+                <li id="pesquisa" class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- Counter - Alerts -->
+                        <span class="badge badge-danger badge-counter">3+</span>
+                    </a>
+                    <!-- Dropdown - Alerts -->
+                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">Notificações</h6>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-noticia">
+                                    <i class="far fa-newspaper text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">27 de abril de 2022</div>
+                                <span class="font-weight-bold">Shiba Inu (SHIB) lança plataforma para investidores ‘destruírem’ suas criptomoedas — e ainda vão receber dinheiro por isso</span>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-success">
+                                    <i class="fas fa-donate text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">27 de abril de 2022</div>O rumo do mercado de criptomoedas em uma recessão dos EUA vai depender da Nasdaq</div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-warning">
+                                    <i class="fas fa-exclamation-triangle text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">27 de abril de 2022</div>Bitcoin segue abaixo dos US$ 40 mil com cautela dos investidores a ativos de risco</div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar mais notificações</a>
+                    </div>
+                </li>
+
+                <!-- Nav Item - User Information -->
+                <li id="pesquisa" class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <img class="img-profile rounded-circle mr-2" src="./img/user.svg">
+                         <span class="mr-2 d-none d-lg-inline text-green-002 small font-weight-bold">Usuário</span>                       
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" daria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Perfil</a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>Configurações</a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>Minhas atividades</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Sair</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+</header>
+    <!-- Content Row -->
+    <div id="body">
+        <div class="row align-center g-0">
+
+            <div id="menu-lateral" class="col m-2">
+                <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+                    <!-- Sidebar - Brand -->
+                    <a class="sidebar-brand d-flex align-items-right justify-content-right" entehref="index.html">
+
+                        <div class="sidebar-brand-text mx-1">Menu</div>
+                    </a>
+
+                    <!-- Nav Item - Pages Collapse Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-fw fa-home"></i>
+                            <span>Dashboard</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-fw fa-wallet"></i>
+                            <span>Carteira</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <i class="arrow fas fa-fw fa-long-arrow-alt-up"></i>
+                            <i class="arrow fas fa-fw fa-long-arrow-alt-down"></i>
+                            <span class="ml-2">Transações</span>
+                        </a>
+                        <div id="collapseTwo" class="collapse mr-2" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div class="bg-muted py-2 collapse-inner rounded">
+                                <a class="collapse-item" href="#">Entradas</a>
+                                <a class="collapse-item" href="#">Saídas</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-fw fa-chart-line"></i>
+                            <span>Investimentos</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-fw fa-clipboard"></i>
+                            <span>Relatórios</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-fw fa-headset"></i>
+                            <span>Ajuda</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="conteudo" class="col">
+                <div class="row g-0">
+                    <!-- Valores -->
+                    <div id="card-moeda" class="col m-2 p-0">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <h6 class="text-lg font-weight-bold text-primary mb-1 pl-2">Moeda</h6>
+                                <div class="row g-0 align-items-center">
+                                    <div class="col ml-3 pl-2">
+                                        <div class="texto-valores text-xs text-primary mb-1">
+                                            Valor Atual</div>
+                                        <div class="h5 mb-0 font-weight-bold text-green">R$ 65,77</div>
+                                    </div>
+                                    <div class="col mr-3 pl-2">
+                                        <div class="texto-valores text-xs text-primary mb-1">
+                                            Valor Máximo</div>
+                                        <div class="h5 mb-0 font-weight-bold text-green">R$ 78,50</div>
+                                    </div>
+                                    <div class="col mr-2 pl-2">
+                                        <div class="texto-valores text-xs text-primary mb-1">
+                                            Valor Mínimo</div>
+                                        <div class="h5 mb-0 font-weight-bold text-green">R$ 62,88</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                            <!-- Saldo Moeda -->
+                    <div id="caixa-saldo" class="col m-2 p-0">
+                        <div class="card shadow h-100">
+                            <div class="card-body">
+                                <div class="mr-2">
+                                    <div class="text-lg font-weight-bold text-primary pl-2">
+                                        Saldo</div>
+                                    <div class="valor-saldo h5 text-green pl-2 lh-1">1106,88<span class="text-primary text-nowrap text-xs ml-1 font-weight-bold">BTC</span>
+                                    </div>
+                                    <div class="text-xs font-weight-normal text-green mb-2 pl-2 p-0 lh-1">3294.48 BRL</div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="row g-0">
+                    <!-- Approach -->
+                    <div class="col m-2 p-0">
+                        <div id="card-carteira" class="card shadow">
+                            <div class="card-body">
+                                <h6 class="text-lg font-weight-bold text-primary pb-3 pl-2">Consultar carteira de:</h6>
+                                <a id="botao-carteira" class="" href="#" role="button" data-toggle="dropdown">
+                                    <span class="sel-cart text-green-001">Selecionar carteira</span>
+                                    <i class="fas fa-chevron-down pl-1 text-green-001 fa-xs"></i>
+                                </a>
+                                <div class="vl"></div>
+                                <div style="text-align: center;" class="dropdown-menu shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#">Usuário 1
+                                    </a>
+                                    <a class="dropdown-item" href="#">Usuário 2
+                                    </a>
+                                    <a class="dropdown-item" href="#">Usuário 3
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="neg-btc" class="row g-0 align-items-center">
+                                <div class="col mr-2 pl-2">
+                                    <div class="texto-valores text-xs text-primary font-weight-bold mb-1">Saldo Total</div>
+                                    <div class="h5 mb-0 font-weight-bold text-green">2540,60<span class="text-primary text-xs ml-1 font-weight-bold">BTC</span></div>
+                                </div>
+                                <div class="col mr-2 pl-2">
+                                    <div
+                                        class="texto-valores text-xs text-primary text-nowrap font-weight-bold mb-1 pr-3">Saldo para negociação</div>
+                                    <div class="h5 mb-0 font-weight-bold text-green">501,25<span class="text-primary text-xs ml-1 font-weight-bold">BTC</span></div>
+                                </div>
+                                <div class="row">
+                                    <input id="caixa-texto" class="col" type="text" placeholder="Valor"/>
+                                    <a id="botao-comprar" class="col" href="#" role="button" data-toggle="dropdown">
+                                        <span class="sel-cart text-green-001">Comprar</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row g-0">
+                    <!-- Grafico -->
+                    <div id="card-grafico" class="col m-2 p-0">
+                        <div class="card shadow">
+                            <!-- Card Header - Dropdown -->
+                            <a>
+                                <img class="p-4" src="./img/grafico.svg">
+                            </a>
+                        </div>
+                    </div>                        
+                </div>                
+            </div>           
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
