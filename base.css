@@ -4491,7 +4491,6 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  background-color: #F6F6F6;
   background-clip: border-box;
   border: 1px solid #e3e6f0;
   border-radius: 1rem;
@@ -9789,8 +9788,12 @@ background-color: #EEEEEE !important;
 
 .sidebar .nav-item .nav-link .img-profile,
 .topbar .nav-item .nav-link .img-profile {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3em;
+}
+
+.img-profile {
+  margin-top: 30px;
 }
 
 .topbar {
@@ -9940,7 +9943,8 @@ background-color: #EEEEEE !important;
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: #b7b9cc;
+  color: #030026;
+  transition: 0.5s !important;
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:active {
@@ -10497,7 +10501,7 @@ body.sidebar-toggled footer.sticky-footer {
   border-radius: 10px;
   font-weight: 500;
   padding: 10px 10px;
-  background-color: #539252;
+  background-color: #6B6B99;
   box-shadow: 1px 1px 4px #CDD9CE;
   min-width: 172px !important;
   min-height: 41px !important;
@@ -10508,7 +10512,7 @@ body.sidebar-toggled footer.sticky-footer {
 
 #botao-carteira:hover {
   text-decoration: none;
-  background-color: #20771A;
+  background-color: #41417C;
   transition-duration: 300ms;
 }
 
@@ -10594,7 +10598,7 @@ body.sidebar-toggled footer.sticky-footer {
     max-width: 160px;
     height: 35px;
     border-radius: 10px;
-    background-color: #022204 !important;
+    background-color: #1C1C4C !important;
     text-align: right; 
     border: none;
     font-size: 800;
@@ -10614,6 +10618,18 @@ body.sidebar-toggled footer.sticky-footer {
   }
 
   #navlogo {
-    max-width: 10rem;
+    max-width: 3rem;
     margin-left: 8rem;    
+  }
+
+  .text-blue1 {
+    color: #25255E;
+  }
+
+  .text-blue2 {
+    color: #444472;
+  }
+
+  .text-blue3 {
+    color: #6B6B99;
   }
